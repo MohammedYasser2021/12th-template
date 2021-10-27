@@ -1,0 +1,115 @@
+.gallery{
+    padding-bottom: 100px;
+}
+@media (min-width:1200px){
+    .gallery-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px
+    }
+    .gallery-preview {
+        width:800px;
+        
+    }
+    .gallery-preview img{
+        width: 100%;
+    }
+    .gallery-preview i{
+        position: relative;
+        top: -450px;
+        color:#222;
+        font-weight: bold;
+        left:350px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color .5s ease-in-out;
+    }
+
+}
+@media (min-width: 768px) and (max-width:1199px){
+    .gallery-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px
+    }
+    .gallery-preview {
+        width:720px;
+        height: 300px;
+    }
+    .gallery-preview img{
+        width: 100%;
+        height: 100%
+    }
+    .gallery-preview i{
+        position: relative;
+        top: -280px;
+        color:#222;
+        font-weight: bold;
+        left:320px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color .5s ease-in-out;
+    }
+
+}
+
+@media (max-width:767px){
+    .gallery-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px
+    }
+    .gallery-preview {
+        width:400px;
+    }
+    .gallery-preview img{
+        width: 100%;
+        
+    }
+    .gallery-preview i{
+        position: relative;
+        top: -230px;
+        color:#222;
+        font-weight: bold;
+        left:170px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color .5s ease-in-out;
+    }
+}
+.gallery-content img{
+    width:100%;
+    transition: opacity 0.5s ease-in-out;
+    transition: margin-top .5s ease-in-out;
+    cursor: pointer;
+}
+.gallery-content img:nth-of-type(4){
+    height: 100%;
+    border-radius: 20px;
+}
+
+.gallery-preview{
+    margin: 30px auto 0;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.image-text{
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #222;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.gallery-content img:hover{
+    opacity: 0.6;
+    margin-top: -15px;
+}
+.gallery-preview i:hover{
+    color:red;
+}
+

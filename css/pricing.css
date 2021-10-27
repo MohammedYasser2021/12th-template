@@ -1,0 +1,69 @@
+.pricing{
+    padding-bottom: 100px;
+}
+.pricing .section-head h2{
+    color:#000;
+    letter-spacing: 1px;
+}
+.pricing .section-head p{
+    color:var(--fifth-color);
+}
+@media (min-width:992px){
+    .pricing-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+     }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .pricing-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+     }
+}
+
+@media (max-width:767px){
+    .pricing-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:20px;
+     }
+}
+
+
+.pricing-item{
+    text-align: center;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.pricing-item img{
+    margin: 30px 0;
+    
+}
+
+.pricing-item p{
+    color: var(--fifth-color);
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: left;
+    padding:0 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.pricing-info {
+    margin-bottom: 30px;
+    transition: margin-left .5s ease-in-out;
+}
+.pricing-info h4{
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.pricing-info span{
+    color:var(--second-color)
+}
+.pricing-item:hover .pricing-info{
+    margin-left: 20px;
+}
